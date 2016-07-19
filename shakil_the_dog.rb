@@ -17,7 +17,7 @@ def shakil_the_dog
     when "woof"
       puts "WOOF WOOF WOOF"
 
-    when "shakil stop" || "Shakil STOP!"
+    when "shakil stop", "Shakil STOP!"
       puts ""
 
     when "meow"
