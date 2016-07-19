@@ -1,12 +1,15 @@
 # must be baller and either furnished or rent cheaper than 2100
 
-def check(furnished, rent)
-  furnished || rent < 2100
-end
+#def check(furnished, rent)
+# furnished || rent < 2100
+#end
+
+#def rent?(furnished, rent, baller)
+# baller && check(furnished, rent)
+#end
 
 def rent?(furnished, rent, baller)
-  check(furnished, rent) && baller
-end
+  baller && (furnished || rent < 2100)? 
 
 
 ###
