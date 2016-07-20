@@ -14,7 +14,7 @@ def total_cost(length,height,colors)
       price = colors * 15
     end
 
-  puts ((price + (dimensions*15)) * 0.85)
+  puts ((price + (dimensions*15)) * 1.15)
 end
 
-total_cost(4,3,2)
+total_cost(5,2,2)
