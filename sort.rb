@@ -52,13 +52,13 @@ puts "max of just 6 is: #{result}"
 
 def bubble_sort(arr)
   return arr if arr.length <= 1 
-  swapped = true
-  while swapped do          
-    swapped = false                        
-    (0...(arr.length-1)).each do |i|
+  sorted = true
+  while sorted do          
+    sorted = false                        
+    (0..(arr.length-2)).each do |i|
       if arr[i] > arr[i+1]                      
         arr[i], arr[i+1] = arr[i+1], arr[i] 
-        swapped = true
+        sorted = true
       end
     end    
   end
